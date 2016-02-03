@@ -72,9 +72,9 @@ var model = {
 
 		if (direction === 1) {
 			row = Math.floor(Math.random() * this.boardSize) ;
-			col = Math.floor(Math.random() * this.boardSize - this.shipLength) ;
+			col = Math.floor(Math.random() * (this.boardSize - this.shipLength + 1)) ;
 		} else {
-			row = Math.floor(Math.random() * this.boardSize - this.shipLength) ;
+			row = Math.floor(Math.random() * (this.boardSize - this.shipLength + 1)) ;
 			col = Math.floor(Math.random() * this.boardSize) ;
 		}
 
